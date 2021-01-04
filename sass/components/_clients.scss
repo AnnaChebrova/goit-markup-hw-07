@@ -1,19 +1,13 @@
 .clients {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  @extend %container;
   padding-top: 94px;
   padding-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .clients ul {
   display: flex;
 }
 .clients a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %center-flex;
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;

@@ -40,7 +40,7 @@ img {
   overflow: hidden;
 }
 
-.logo-web, .logo-studio {
+.logo-web, .logo-studio, .footer-logo-studio {
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -49,14 +49,23 @@ img {
   letter-spacing: 0.03em;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
+.header-container, .features, .products-container, .clients, .projects > ul {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.employee-item a, .clients a, .join a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
 .logo-web {
@@ -107,7 +116,6 @@ img {
   left: 0;
   width: 48px;
   height: 4px;
-  /* opacity: 0; */
   display: inline-flex;
   background: #2196f3;
   border-radius: 2px;
@@ -437,14 +445,6 @@ textarea {
   color: #ffffff;
 }
 
-.features {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .features > ul {
   display: flex;
   padding-top: 94px;
@@ -488,9 +488,6 @@ textarea {
 .products-container {
   padding-top: 94px;
   padding-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1170px;
 }
 
 .products-title,
@@ -595,9 +592,6 @@ textarea {
 }
 
 .employee-item a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
   fill: #afb1b8;
@@ -620,13 +614,8 @@ textarea {
 }
 
 .clients {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 94px;
   padding-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .clients ul {
@@ -634,9 +623,6 @@ textarea {
 }
 
 .clients a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
@@ -669,11 +655,6 @@ textarea {
 .footer-logo-studio {
   width: 145px;
   height: 31px;
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: #ffffff;
 }
 
@@ -736,9 +717,6 @@ textarea {
 }
 
 .join a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -768,10 +746,6 @@ textarea {
   height: 86px;
 }
 
-.subscription ul {
-  display: flex;
-}
-
 .subscription-field {
   width: 358px;
   height: 50px;
@@ -783,9 +757,6 @@ textarea {
   padding-left: 16px;
 }
 
-/* .subscription-field:focus {
-  placeholder: opacity;
-} */
 .subscription-email {
   position: relative;
   display: flex;
@@ -793,15 +764,6 @@ textarea {
   margin-right: 12px;
 }
 
-/* .placeholder {
-  position: absolute;
-  left: 16px;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-} */
 .subscription-button {
   padding: 0;
   width: 200px;
@@ -815,9 +777,10 @@ textarea {
   cursor: pointer;
 }
 
-/* .subscription-button > svg {
-  fill: #eeeeee;
-} */
+.subscription ul {
+  display: flex;
+}
+
 .button-text {
   font-weight: bold;
   font-size: 16px;
@@ -848,8 +811,6 @@ textarea {
   justify-content: space-between;
 }
 
-/*.filter li:not(:last-child) {
-  margin-right: 8px;*/
 .button-filter {
   padding: 6px 22px;
   font-weight: 500;
@@ -878,12 +839,7 @@ textarea {
 .projects > ul {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /*Альтернатива ширине элементов контейнера

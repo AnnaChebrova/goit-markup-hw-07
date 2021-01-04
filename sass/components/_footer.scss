@@ -10,11 +10,7 @@
 .footer-logo-studio {
   width: 145px;
   height: 31px;
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @extend %font-logo;
   color: $white-color;
 }
 .address {
@@ -68,9 +64,7 @@
 }
 
 .join a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %center-flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -95,53 +89,39 @@
   margin-left: 93px;
   width: 570px;
   height: 86px;
+
+  &-field {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $bg-color;
+    color: $white-color;
+    padding-left: 16px;
+  }
+  &-email {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+  }
+  &-button {
+    padding: 0;
+    width: 200px;
+    height: 50px;
+    background: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+  }
 }
 .subscription ul {
   display: flex;
 }
-.subscription-field {
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: $bg-color;
-  color: $white-color;
-  padding-left: 16px;
-}
-/* .subscription-field:focus {
-  placeholder: opacity;
-} */
-.subscription-email {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-right: 12px;
-}
-/* .placeholder {
-  position: absolute;
-  left: 16px;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-} */
-.subscription-button {
-  padding: 0;
-  width: 200px;
-  height: 50px;
-  background: $accent-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  cursor: pointer;
-}
-/* .subscription-button > svg {
-  fill: #eeeeee;
-} */
 .button-text {
   font-weight: bold;
   font-size: 16px;
