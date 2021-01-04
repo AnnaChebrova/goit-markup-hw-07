@@ -187,7 +187,7 @@ img {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Hero-background.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Hero-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -419,7 +419,7 @@ textarea {
 
 .checkbox:checked + .icon-agree {
   background-color: #2196f3;
-  background-image: url(../../images/icon-check.svg);
+  background-image: url("../../images/icon-check.svg");
   background-size: contain;
   background-origin: border-box;
   border-color: #2196f3;
@@ -794,7 +794,7 @@ textarea {
   content: "";
   width: 24px;
   height: 24px;
-  background-image: url(../../images/icon-send.svg);
+  background-image: url("../../images/icon-send.svg");
   display: block;
 }
 
